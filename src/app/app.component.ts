@@ -22,10 +22,12 @@ export class AppComponent implements OnInit {
 
   nextStepPlease() {
     this.activeIndex++;
-    //You need to override steps folder in below path to resolve error in this file
-    //path =>  project-name\node_modules\primeng\components\
-    Steps.prototype.itemClick(event, Steps.prototype, this.activeIndex, true, true);
-    let lists = this.elRef2.nativeElement.querySelectorAll('li');
+    // You need to override steps folder in below path to resolve error in this file
+    // path =>  project-name\node_modules\primeng\components\
+    Steps.prototype.itemClick(event, Steps.prototype, this.activeIndex);
+    // Steps.prototype.itemClick(event, Steps.prototype, this.activeIndex);
+
+    const lists = this.elRef2.nativeElement.querySelectorAll('li');
     for (let i = 0; i <= this.activeIndex - 1; i++) {
       this.renderer.setStyle(lists[i], 'background', 'green');
       this.renderer.setStyle(lists[i], 'opacity', '1');

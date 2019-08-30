@@ -1,6 +1,6 @@
 
 <div #stepsDiv>
-  <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="true" [isPreviousTabClickable]="true" [hideStepNumber]="true"></p-steps>
+  <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="true"  ></p-steps>
 </div>
 
 <button (click)="nextStepPlease()" *ngIf="activeIndex!==5">Next</button>
