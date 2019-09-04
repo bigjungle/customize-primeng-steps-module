@@ -1,5 +1,10 @@
 # ClickableSteps
 
+You need to override steps folder in below path to resolve error in this file
+path =>  project-name\node_modules\primeng\components\
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
